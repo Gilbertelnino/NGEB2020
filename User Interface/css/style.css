@@ -86,3 +86,157 @@ body{
         margin-top: 2rem;
     }
 }
+#slideshow-wrapper{
+    display: block;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#slideshow-wrapper > *{
+    position: absolute;
+    display:block;
+    width:100%;
+    text-align: center;
+    height: calc(100vh - 100px);
+    animation-name: slide;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    overflow:hidden;
+}
+article:nth-child(1){
+    left:0;
+    animation-delay:-1s;
+    background-image: url('../images/field.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+}
+article:nth-child(2){
+    animation-delay:2s;
+    background-image: url('../images/vineyards.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+}
+article:nth-child(3){
+    animation-delay:5s;
+    background-image: url('../images/vineyards.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+}
+article:nth-child(4){
+    left:0;
+    animation-delay:8s;
+    background-image: url('../images/tastes.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+}
+
+@keyframes slide{
+    0%{left:100%;width:100%;}
+    5%{left: 0%;}
+    25%{ left: 0%}
+    30%{ left: -100%; width:100%;}
+    35%{left:-100%; width: 0%;}
+    100% { left: 100%; width:0%}
+}
+#slideshow-wrapper .slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slideshow-wrapper .slide h1{
+    font-size: 1.7rem;
+}
+#slideshow-wrapper .slide h1 a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 2rem;
+}
+#slideshow-wrapper .slide p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding: 1.2rem;
+}
+#slideshow-wrapper .slide .link{
+    text-align: center;
+}
+#slideshow-wrapper .slide .view{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid brown;
+    padding: .7rem;
+    text-align: center;
+}
+#slideshow-wrapper .slide .view:hover{
+    color: white;
+    background-color: rgb(170, 39, 39);
+    transition: 2s;
+}
+
+#product-container{
+    padding-top: 3rem;
+    background-color: rgba(7, 8, 9, 0.938);
+    display: grid;
+    grid-gap: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+#product-container .product{
+   padding: 2rem;
+   background-color: rgba(7, 8, 9, 0.5);
+}
+#product-container .title{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    background-color: rgb(170, 39, 39);
+    padding: .5rem;
+    text-transform: capitalize;
+}
+#product-container .description{
+    padding-top: 2rem;
+    color: rgba(126, 127, 128, 0.5);
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.4;  
+}
+#product-container .container-link{
+    text-align: center;
+    padding-top: 1rem;
+}
+#product-container .container-link a{
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+    border: 2px solid brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#product-container .container-link :hover{
+    color: white;
+    background-color: rgb(170, 39, 39);
+    transition: 2s;
+}
+
+
+
+#product-container img{
+    width: 100%;
+}
