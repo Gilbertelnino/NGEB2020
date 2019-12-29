@@ -4,9 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../icons asset/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reservation.css">
     <title>reservation</title>
 </head>
 <body>
-    <h1>Reservation pages</h1>
+    <header id="header-section">
+        <address>
+            <a href="https://www.google.com/maps/place/KN+76+St,+Kigali/@-1.9473909,30.0550579,17z/data=!3m1!4b1!4m5!3m4!1s0x19dca42488d5b1ad:0x3956dc2aed14d391!8m2!3d-1.9473963!4d30.0572466?hl=en">KN 76 Street, in Nyarugenge
+            </a><br>
+            <a href="tel:+250782346378">+250782346378</a><span>,</span>
+            <a href="mailto:gilbeltelnino@gmail.com">gilbeltelnino@gmail.com</a>
+        </address>
+        <h1 id="logo">
+            <a href="#" title="NGEB2020">
+                <i class="fas fa-utensils"></i>
+            </a>
+        </h1>
+        <nav>
+            <ul id="social-media">
+                <li><a href="#" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="section-nav">
+        <nav>
+            <ul>
+                <li class="show"><a href="index.html">home</a></li>
+                <li class="show"><a href="./html/menu.html">menu</a></li>
+                <li class="show"><a href="./html/events.html">events</a></li>
+                <li class="show"><a href="./html/gallery.html">gallery</a></li>
+                <li class="show"><a href="./html/blog.html">blog</a></li>
+                <li class="show"><a href="./html/reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="header">
+        <h1>reservation</h1>
+    </header>
+    <main id="reservation-container">
+        <section class="direct-call">
+            <h1>Booking a table</h1>
+            <p>Book a table at NGEB2020 restaurant,simply call us on +250782346378 or use the form below.</p>
+        </section>
+        <section class="private-events">
+            <h1>events and private</h1>
+            <p>NGEB2020 Restaurant has two exclusive private dining rooms accommodating groups up to 100, and full restaurant buyouts on weekends for up to 800 guests, ideal for weddings and special occasions. These upscale private rooms are perfect for breakfast meetings, product launches, exclusive dinners and intimate celebrations.</p>
+            <p>Call an Event Specialist at +250782346378, or send us an email gilbeltelnino@gmail.com</p>
+        </section>
+        <section class="form-section">
+            <h1>book a table</h1>
+            <form action="#" id="reservation-form">
+                <div class="first-column">
+                    <label for="date" class="label">Date*</label>
+                    <input type="date" name="date" placeholder="Date .." required class="input">
+                    <label for="name" class="label">Name*</label>
+                    <input type="text" name="name" placeholder="Name.." required class="input">
+                    
+                </div>
+                <div class="second-column">
+                    <label for="time" class="label">Time*</label>
+                    <input type="datetime" name="time" placeholder="11:00" required class="input">
+                    <label for="email" class="label">Email*</label>
+                    <input type="email" name="email" placeholder="Email.." required class="input">
+                    
+                </div>
+                <div class="third-column">
+                    <label for="number" class="label">Guests*</label>
+                    <input type="number" name="number" placeholder="Guests.." required class="input">
+                    <label for="phone" class="label">Phone*</label>
+                    <input type="tel" name="phone" placeholder="Phone.." required class="input">
+                </div>
+                <div class="first-row">
+                    <label for="message" class="label">Message</label>
+                    <textarea name="message" cols="30" rows="5" placeholder="Message..."></textarea>
+                </div>
+               <div class="second-row">
+                    <label class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checked" required><span>I've read and accept terms and condition*</span>
+                    </label>
+               </div>
+               <div class="third-row">
+                    <button class="btn">make reservation</button>
+               </div>
+            </form>
+        </section>
+    </main>
+    <footer id="footer-container">
+        <section id="book-table">
+            <h1 class="table">book a table online</h1>
+            <p>User our online reservation form to book your table in a restaurant,bar or cellar</p>
+            <a href="./html/reservation.html">book a table</a>
+            
+        </section>
+        <section id="open-day">
+            <h1 class="headline">opening hours</h1>
+            <p class="explanation">
+                Get some tomatoes, and, if they were eaten with the great extravagance to season with butter.
+            </p>
+            <table>
+                <tr>
+                    <th>Days</th>
+                    <th>hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>09:00AM - 09:00PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>08:00AM - 11:00PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>closed</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:00AM - 10:00PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>09:00AM - 09:00PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>09:00AM - 03:00PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>09:00AM - 02:00PM</td>
+                </tr>
+            </table>
+        </section>
+        <section class="about">
+            <h1 class="headline">About us</h1>
+            <p class="explanation">Take your sauce with bread-crumbs, and pour in salted water, and put one-quarter the fire. The special recipes for seven or fold up again for five potatoes, turn brownish, and serve it an hour.</p>
+            <p class="explanation">Put on slowly, in salted water and, if you wish; sprinkle into slices. Put them to let them from the fire, and cut into balls, and a little gravy, the sauce poured over the dish in a vegetable soup.</p>
+            <div class="about-link">
+                <a href="./html/reservation.html">About Us</a>
+            </div>
+        </section>
+    </footer>
+    <footer id="footer-link">
+        <nav>
+            <ul>
+                <li class="show"><a href="index.html">home</a></li>
+                <li class="show"><a href="./html/menu.html">menu</a></li>
+                <li class="show"><a href="./html/events.html">events</a></li>
+                <li class="show"><a href="./html/gallery.html">gallery</a></li>
+                <li class="show"><a href="./html/blog.html">blog</a></li>
+                <li class="show"><a href="./html/reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
