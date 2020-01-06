@@ -47,16 +47,36 @@ img{
 }
 
 .main-appetizers-container{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 #appetizers{
     display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-gap: 20px;
-    grid-template-columns: 150px 150px;
-    
 }
-#appetizers .appetizer{
+.appetizer{
+    background-color: rgba(100, 76, 206, 0.938);
+    padding: 1.4rem;
     display: grid;
-    grid-template-columns: 150px;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 13px;
+    align-items: center;
+    color: white;
+}
+.appetizer .type-price{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+    border-bottom: 2px solid rgb(26, 23, 23);
+    padding: .6rem 0;
+}
+.appetizer h1{
+    text-transform: capitalize;
+}
+.appetizer .type-price h2{
+    justify-self: right;
+}
+.appetizer p{
+    margin-top: 1rem;
 }
